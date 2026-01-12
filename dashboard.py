@@ -39,6 +39,12 @@ def generate_mock_data():
     return pd.DataFrame(data)
 
 # --- SESSION STATE ---
+# Safety Check: If data exists but is missing 'Email', force a refresh
+if 'team_data' in st.session_state:
+    if 'Email' not in st.session_state.team_data.columns:
+        del st.session_state['team_data']
+
+# Load data if not present
 if 'team_data' not in st.session_state:
     st.session_state.team_data = generate_mock_data()
 
