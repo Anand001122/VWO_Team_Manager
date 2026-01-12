@@ -1,0 +1,51 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "email": "alice@vwo.com",
+      "name": "Alice (The Ghost Worker)",
+      "jira_issues": [],
+      "last_commit_timestamp": "2026-01-12T10:30:00",
+      "note": "She is coding right now (commit today) but has NO active tickets."
+    },
+    {
+      "id": "u2",
+      "email": "bob@vwo.com",
+      "name": "Bob (The Stuck)",
+      "jira_issues": [
+        {
+          "key": "VWO-101",
+          "status": "In Progress"
+        }
+      ],
+      "last_commit_timestamp": "2026-01-08T09:00:00",
+      "note": "Claims to be working, but hasn't committed code in 4 days."
+    },
+    {
+      "id": "u3",
+      "email": "charlie@vwo.com",
+      "name": "Charlie (Truly Free)",
+      "jira_issues": [
+        {
+          "key": "VWO-102",
+          "status": "Done"
+        }
+      ],
+      "last_commit_timestamp": "2026-01-11T16:00:00",
+      "note": "Work is done and code is merged. Assign new task here."
+    },
+    {
+      "id": "u4",
+      "email": "dave@vwo.com",
+      "name": "Dave (Standard)",
+      "jira_issues": [
+        {
+          "key": "VWO-103",
+          "status": "In Progress"
+        }
+      ],
+      "last_commit_timestamp": "2026-01-12T09:15:00",
+      "note": "Normal active worker."
+    }
+  ]
+}
